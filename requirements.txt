@@ -1,0 +1,5 @@
+azure
+Pillow
+NumPy
+django==2.1.7
+opencv-python

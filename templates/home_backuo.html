@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>
+            Worker Safety Solution
+        </title>
+
+        <style>
+            body{
+                background-color: #c6c6c6;
+            }
+		  h1{
+              
+                  color:#c21807;
+                  width: 50%;
+                  height: 20%;
+				  font-family:verdana;
+				  float: center;
+				  display: inline;
+				  margin: 320px;
+				  font-size: xx-large
+            }
+			tr, td {
+					padding: 15px;
+				}
+			p
+			{
+				font-family:verdana;
+				font-size:15px;
+			}
+        </style>
+    </head>
+	
+<body>
+
+
+<div id="container">
+    <main>
+		<section class="half" >
+		 <div id="container" style="overflow:auto">
+				<table>
+				<tr>
+				<td>
+				<img src="{% static '/OIP.jpg' %}"  alt="logo" height="50px" width="200px">
+				</td>
+				<td>
+				<h1>Worker Safety Solution</h1></div></td>
+				</tr>
+				</table>
+				<hr>
+		</section>
+		<section class="half">
+			<table align ="center">
+				<tr>
+				<td>
+					<a href="{% url 'EPMFileUpload' %}">
+					<img src="{% static '/equipmentcollage.jpg' %}" alt="epm" 
+					height="200px" width="380px">
+					<div align= "center"><p>Equipment Position Monitoring</p></div>
+					</a>
+				</td>
+				<td>
+				<a href="">
+					<img src="{% static '/Equipment 1.jpg' %}" alt="epm"
+					height="200px" width="380px">
+					<div align= "center"><p>Unattended Equipment</p></div>
+					</a>
+				</td>
+				<td>
+				<a href="">
+					<img src="{% static '/GF 1.jpg' %}" alt="epm"
+					height="200px" width="380px">
+					<div align= "center"><p>Geofencing System</p>	</div>
+					</a>
+				</td>
+			</tr>
+			</table>
+			<table align ="center">
+			<tr>
+				<td>
+				<a href="">
+					<img src="{% static '/SV2.jpg' %}" alt="epm"
+					height="200px" width="380px">
+					<div align= "center"><p>Safety Helmet and Vests</p></div>
+					</a>
+				</td>
+				<td>
+				<a href="">
+					<img src= "{% static '/spl2.jpg' %}" alt="epm"
+					height="200px" width="380px">
+					<div align= "center"><p>Spillage Detection</p></div>
+					</a>
+				</td>
+			</tr>
+			</table>
+		</section>
+</body>
+</html>

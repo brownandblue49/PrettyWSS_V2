@@ -1,0 +1,6 @@
+azure
+azure-storage-queue
+Pillow
+NumPy
+django==2.1.7
+opencv-python

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Equipment Position Monitoring
+        </title>
+
+        <style>
+            body{
+                background-color: #2b542c;
+            }
+    
+            h1{
+                  color: white;
+                  background-color:#4cae4c;
+                  width: 100%;
+                  float:left;
+                  height: 50px;
+            }
+    
+            input{
+                width: auto;
+                height: 60px;
+                text-align: center;
+                background-color: #1b6d85;
+                color: #ffffff;
+                font-size: 35px;
+            }
+
+            a{
+                width: auto;
+                height: 60px;
+                text-align: center;
+                background-color: #1b6d85;
+                color: #ffffff;
+                font-size: 35px;
+            }
+              
+        </style>
+    </head>
+<body>
+    
+    <h1>
+        Please Select the Video File : 
+    
+    </h1>
+   
+    <form action="/external/" method="post" >   
+        {% csrf_token %}       
+        <input type="file" name="fileupload" value="fileupload" id="fileupload"> <hr>
+        {{data_external}}<br><br>
+        {{data1}} <br><br>
+        <input type="Submit"  value="Submit">
+    <a href="
+        https://app.powerbi.com/reportEmbed?reportId=18eb5e99-241d-4b69-99e9-7e058d2c0dd8&autoAuth=true&ctid=18791e17-6159-4f52-a8d4-de814ca8284a&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" class=”button” target=”_blank”>Open Power BI Report
+    </a>
+   
+     </form>
+
+</body>
+</html>

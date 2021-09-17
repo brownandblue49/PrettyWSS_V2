@@ -1,0 +1,182 @@
+<!doctype html>
+{% load static %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Worker Safety Solution</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.ico">
+
+        <!--Google Font link-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="{% static 'css/slick/slick.css' %}"> 
+        <link rel="stylesheet" href="{% static 'css/slick/slick-theme.css' %}">
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+        <link rel="stylesheet" href="{% static 'css/iconfont.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootsnav.css' %}">
+
+        <!-- xsslider slider css -->
+
+
+        <!--<link rel="stylesheet" href="assets/css/xsslider.css">-->
+
+
+
+
+        <!--For Plugins external css-->
+        <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!--<link rel="stylesheet" href="assets/css/colors/maron.css">-->
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="{% static 'css/responsive.css'%}" />
+
+        <script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js'%}"></script>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar-collapse">
+
+	
+
+<nav class="navbar navbar-default" style = "border-top:5px solid #ce0000;">
+			<div class="container-fluid">
+			<table width="100%" height="100%">
+			<div class="navbar-header">
+			<tr>
+			<td width="20%"><img src="{% static '/Hitachi-Vantara-logo-300x300.png' %}" width ="100px" height="100px" style = 'padding-left:10px;'alt =""/></td>
+			</div>
+			
+			<td  class="text-center" style='text-align:center;vertical-align:middle;'>
+			<p  style="font-size:36px;">Worker Safety Solution</p>
+			</td>
+			<td width="20%" align="right">
+			<a href = "{% url 'home' %}" ><img src = "{% static '/home_icon.png' %}"  width ="55px" height="55px" /></a>
+			</td>
+			</table>
+			</nav>
+ 
+        <div class="culmn">
+            <!--Home page style-->
+
+
+           
+
+            <!--Home Sections-->
+
+
+
+            <!--product section-->
+			
+			
+            <section id="product" class="product">
+                <div class="container">
+                    <div class="main_product roomy-80">
+                        
+
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-6 ">
+                                                <div class="port_item xs-m-top-30 ">
+                                                    <div class="port_img">
+                                                        <img src="{% static '/helmetcolours_1500.jpg' %}" alt="" />
+                                                        <div class="port_overlay text-center">
+                                                            <a href="{% url 'EPMFileUpload' %}" ></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="port_caption m-top-20 text-center">
+                                                        <h3>Object Detection</h3>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img">
+                                                        <img src="{% static '/asb0918assembly1.jpg' %}"  alt="" />
+                                                        <div class="port_overlay text-center">
+                                                            <a href=""></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="port_caption m-top-20 text-center">
+                                                        <h3>Unattended equipment</h3>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                  </div>
+                                        
+
+
+                 <div class="row">
+                                            
+                                            <div class="col-sm-6">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img">
+                                                        <img src="{% static '/12-2017-chem-spill-cleanup-detail-1200x627.jpg' %}" alt="" />
+                                                        <div class="port_overlay text-center">
+                                                            <a href="" ></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="port_caption m-top-20 text-center">
+                                                        <h3>Spillage Detection</h3>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img">
+                                                        <img src="{% static '/geo-fence-res.jpg' %}" alt="" />
+                                                        <div class="port_overlay text-center">
+                                                            <a href="#" class="popup-img"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="port_caption m-top-20 text-center">
+                                                        <h3>GeoFencing</h3>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                     
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                         
+
+                            <!-- Controls -->
+                   
+                        </div>
+                    </div><!-- End off row -->
+                </div><!-- End off container -->
+            </section><!-- End off Product section -->
+
+
+
+
+
+        </div>
+
+        <!-- JS includes -->
+
+        
+
+    </body>
+</html>

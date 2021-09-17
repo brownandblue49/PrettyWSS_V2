@@ -1,0 +1,61 @@
+from django.shortcuts import render
+from django.http import HttpResponse  
+import requests
+from subprocess import run,PIPE
+import os
+from os.path import isfile
+import sys
+from django.views.generic import TemplateView
+from wsinterfaceproject.functions.functions import handle_uploaded_file
+from .forms import ProfileForm 
+from django.core.files.storage import FileSystemStorage
+
+# Create your views here.
+
+def button(request):
+    return render(request , 'home.html')
+
+def home(request):
+    return render(request , 'home.html')
+
+def EPMFileUpload(request):
+   return render(request, "EPMFileUpload.html")
+
+def output(request):
+    data = requests.get("https://reqres.in/api/users")    
+    print(data.text)
+    data = data.text
+    return render(request , 'home.html' , {'data' : data})
+
+def external(request):
+    inp = request.POST.get('fileupload')
+    filename = 'BreakSingleVideotoFrames.py'
+    path = os.getcwd()+'\\'+filename
+    print(path)
+    if isfile(filename):
+        print('Yup exists',type(filename))
+    if isfile(path):
+        print('Yup path exists', type(path))
+    
+    run([sys.executable , filename, inp] ,shell=False ,stdout = PIPE) 
+   # out = "file submitted Successfully"
+    return render(request , 'home.html' )
+
+def upload_file(request):  
+    if request.method == 'POST': 
+        uploaded_file = request.FILES['fileupload']
+        fs = FileSystemStorage()
+        fs.save(uploaded_file.name, uploaded_file)
+        #print(uploaded_file.name)
+        #print(uploaded_file.size)
+        #profile = ProfileForm(request.POST, request.FILES)  
+        #if profile.is_valid():  
+        #    handle_uploaded_file(request.FILES['fileupload'])  
+    #return HttpResponse("File uploaded successfuly")  
+        return render(request,'EPMFileUpload.html')
+
+    else:  
+    #    profile = ProfileForm()  
+    #    return HttpResponse("Fuck") 
+        print('fuck')
+        #return render(request,"EPMFileUpload.html",{'form':Profile})  
